@@ -456,7 +456,7 @@ public class JobManagerImpl
                     boolean first = true;
                     while ( i.hasNext() ) {
                         final Map.Entry<String, Object> current = i.next();
-                        final String key = ISO9075.encode(current.getKey());
+                        final String key = current.getKey();
                         final char firstChar = key.length() > 0 ? key.charAt(0) : 0;
                         final String propName;
                         final Operation op;
